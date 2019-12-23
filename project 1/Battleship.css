@@ -1,0 +1,60 @@
+
+
+table {
+	background-color: brown;
+	width: 50%;
+}
+
+tr {
+	border: 1;
+	height: 50;
+	width: 50;
+}
+td {
+	border: 1;
+	height: 50;
+	width: 50;
+}
+
+#AttackTable
+{
+	display: none;
+	background-color: red;
+}
+
+#ShipTable
+{
+	display:none;
+	background-color: blue;
+}
+
+#P1board1 {
+	display: none;
+	background-color: lightblue;
+	width: 50%;
+	
+} 
+
+#P1board2 {
+	display: none;
+	background-color: lightblue;
+	width: 50%;
+	
+} 
+
+#P2board1 {
+	display: none;
+	background-color: lightblue;
+	width: 50%;
+} 
+
+#P2board2 {
+	display: none;
+	background-color: lightblue;
+	width: 50%;
+} 
+#test
+{
+	background-color: blue;
+	width: 50%;
+}

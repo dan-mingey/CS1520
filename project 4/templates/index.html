@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget Application</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='budget.js') }}"></script>
+</head>
+<body>
+
+    <h1 align="center">Money Money Money</h1>
+    <hr width="50%">
+    <form name="NewCategory" align="center">
+        <h3>Create a new Catagory: </h3>
+        Name of Category: <input type="text" id="CatName" />
+        Monthly Limit ($/Month):<input type="number" id="MonthlyLimit" value=" Monthly Limit" />
+        <input type="button" id="SubmitCategory" value="submit" />
+    </form>
+    <hr width="50%">
+    <form name="DeleteCategory" align="center">
+        <h3>Delete a category: </h3>
+        Delete Category: <select type="text" id="CategoryToDelete"> </select> 
+        <input type="button" id="DeleteCategory" value="delete" />
+    </form>
+
+    <hr width="50%">
+    <form name="NewPurchase" align="center">
+        <h3>New purchase: </h3>
+        Purchase Amount: <input type="number" id="PurchaseAmount"/> 
+        Name of Purchase: <input type="text" id="PurchaseName"/> 
+        Date of Purchase: <input type="date" id="DateOfPurchase"/> 
+        Category of Purchase: <select type="text" id="PurchaseCategory"> </select> 
+        <input type="button" id="SubmitPurchase" value="submit"/> 
+    </form>
+    <hr width="50%">
+    <h2 align="center"> BUDGET SUMMARY </h2>
+    <h3 align="center">CATEGORY: amount ($) remaining/monthly budget</h3>
+    <table id="category_summary" align="center"> </table>
+    
+
+    </body>
+</html>

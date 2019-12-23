@@ -1,0 +1,46 @@
+{%extends "layout.html" %}
+{% block body %}
+
+<h1>Create or Join a Chatroom</h1>
+{% if noChatrooms%}
+  <p>
+    THERE ARE NO CHATROOMS, YOU MUST CREATE ONE
+    </p>
+{% else %}
+
+<table>
+{%for chatroom in chatrooms%}
+  <tr>
+    <td>
+      Chat Name: {{ chatroom.chatroom_name }}
+    </td>
+    <td>
+      creator: {{ chatroom.chatroom_creator }}
+    </td>
+    <!-- button to join the chatroom-->
+    <td>
+        <a href="{{url_for('join_chatroom', ID = chatroom.chatroom_id)}}">Join chatroom</a>
+    </td>
+
+    {% if (chatroom.chatroom_creator|string() == currentUser|string()) %}
+    <td>
+      <a href="{{url_for('remove_chatroom', ID = chatroom.chatroom_id)}}">Delete chatroom</a>
+    </td>
+
+    {% endif%}
+  </tr>
+
+{%endfor%}
+</table>
+{%endif%}
+
+<h3> Create a Chatroom</h3>
+<form action="" method="post">
+  Chatroom Name:  <input type="text" name="chatroom_name" />
+  <input type="submit" name="create_chatroom" value="submit" />
+</form>
+
+
+
+
+{%endblock%}

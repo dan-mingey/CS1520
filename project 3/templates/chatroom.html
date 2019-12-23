@@ -1,0 +1,35 @@
+{%extends "layout.html" %}
+{% block body %}
+
+
+{% if Chatroom%}
+<h3>
+  {{Chatroom.chatroom_name}} 
+</h3>
+{%endif%}
+
+
+<table id = "messages">
+  
+  {% for msg in Messages%}
+    <tr> 
+      <td> {{msg.message_creator }}: {{msg.message_text }}</td>
+    </tr>
+  {% else %}
+
+{% endfor %}
+</table>
+
+
+
+<form>
+  Message: <input type="text" name="message" size="100" id="message_text"><br>
+  <input type="submit" value="Submit" id="submit_message">
+</form>
+
+<script>
+  setup();
+</script>
+
+<a href = "{{url_for('chatpage') }}"> Leave Chatroom </a>
+{%endblock%}

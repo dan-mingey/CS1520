@@ -1,0 +1,35 @@
+{%extends "layout.html" %}
+{% block body %}
+  <form action="" method="post">
+    <p>
+      Create a Staff Member Account
+    </p>
+    Name:  <input type="text" name="staff_username" />
+    <br />
+    Password:  <input type="text" name="staff_password" />
+    <br />
+    <input type="submit" name="create_staff" value="Create Staff Member" />
+  </form>
+
+
+
+  <p>
+     This is a list of all of the events, the date of the event, and which staff is signed up 
+  </p>
+  <table>
+    {%for event in events%}
+    <tr>
+      <td> {{event.event_name}}</td>
+      <td> {{event.event_date}}</td>
+      {%if not event.staffers%}
+      <td> <font color="red">No one has signed up for this event</font></td>
+      {%endif%}
+      {% for user in event.staffers %}
+      <td>
+        {{user.username}}
+      </td>
+      {%endfor%}
+    </tr>
+    {%endfor%}
+  </table>
+{%endblock%}

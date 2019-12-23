@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="{{ url_for('static', filename='chat.css')}}"/>
+  </head>
+  <body>
+    <h1> Welcome to the Chatroom</h1>
+    <form method="get" action="/login">
+        <button type="submit">Sign in</button>
+    </form>
+    <form method="get" action="/register">
+        <button type="submit"> Register for an account</button>
+    </form>
+  </body>
+</html>

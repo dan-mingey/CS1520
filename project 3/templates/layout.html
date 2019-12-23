@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="{{ url_for('static', filename='chat.js') }}"></script>
+  </head>
+  <body>
+    <h1>Welcome to the Chatroom service</h1>
+    <a href="{{url_for('logout')}}">Logout</a>
+    {% block body %} {%endblock%}
+  </body>
+</html>

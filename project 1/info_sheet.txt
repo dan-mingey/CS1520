@@ -1,0 +1,57 @@
+========================================
+CS/COE 1520 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment. Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Daniel Mingey	
+
+Lecture section:  Monday 5:30 - 8:15
+
+Recitation day and time:  Friday 5
+
+Assignment #:  1
+
+Program due date:  Wednesday October 2
+
+Handed in date:  Wednesday October 2
+
+Source code file name(s):
+
+Battleship.html
+Battleship.js
+Battleship.css
+
+
+
+
+
+Other file name(s) (if relevant):
+
+
+
+
+
+
+
+Does your project run without error?: Yes
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+
+
+
+Additional comments to the grader:
+
+The look of the games isnt the greatest, but the functionality works as expected.  
+
+
+
+
+
